@@ -4,30 +4,35 @@
   <head>
     <title>Philadelphia Christian Young Adults</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
   </head>
   <body>
     <h1>Philadelphia Christian Young Adults</h1>
-    <div>
-      <h2>Welcome</h2>
-      <ul>
-        <li>Our purpose is to help you find weekly groups, gatherings, and
-          events for Christian young adults in Philadelphia and surrounding
-          areas.</li>
-        <li>We believe Jesus is the Son of God. He took our place on the cross
-          to atone for our sins and rose from the dead. Whoever believes in Him
-          will have eternal life with Him.</li>
-        <li>We desire to spread the Gospel to all the world, to love others as
-          Christ loves, to worship God with our brothers and sisters in Christ,
-          and to study God's Word together.</li>
-      </ul>
-    </div>
-    <div>
-      <a href="weekly.html">Regular Gatherings</a>
-      <a href="events.html">Events</a>
+    <div class="nav">
+      <a href="weekly.html">Group List</a>
       <a href="ministries.html">Ministries</a>
     </div>
+    <ul>
+      <li>Our purpose is to help you find weekly groups, gatherings, and
+        events for Christian young adults in Philadelphia and surrounding
+        areas.</li>
+      <li>We believe Jesus is the Son of God. He took our place on the cross
+        to atone for our sins and rose from the dead. Whoever believes in Him
+        will have eternal life with Him.</li>
+      <li>We desire to spread the Gospel to all the world, to love others as
+        Christ loves, to worship God with our brothers and sisters in Christ,
+        and to study God's Word together.</li>
+    </ul>
     <p>"For God so loved the world, that he gave his only begotten Son, that
     whosoever believeth in him should not perish, but have everlasting life."
     John 3:16</p>
+    <div id="main-map"></div>
+    <script src="map.js"></script>
   </body>
 </html>

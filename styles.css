@@ -56,3 +56,11 @@ li {
   justify-content: space-around;
   margin: auto;
 }
+
+#main-map {
+  height: 500px;
+}
+
+.nav > * {
+  margin: 20px;
+}

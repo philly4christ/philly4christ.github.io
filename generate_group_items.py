@@ -1,4 +1,7 @@
 import csv
+from geopy.geocoders import Nominatim
+import time
+geolocator = Nominatim(user_agent="pcya_thingifier_generator")
 
 print(""" 
 <!DOCTYPE html>
